@@ -1,7 +1,10 @@
-import Header from "./components/Header/Header.jsx";
-import CoreConcepts from "./components/CoreConcepts.jsx";
+import logo from "./logo.svg";
+import Header from "./components/Header/Header";
 import imgs from "./assets/components.png";
-import TabMenu from "./components/TabMenu.jsx";
+import CoreConcepts from "./components/CoreConcepts/CoreConcepts";
+import TabMenu from "./components/menu/TabMenu";
+
+import "./App.css";
 import { useState } from "react";
 
 function App() {
@@ -15,7 +18,6 @@ function App() {
   return (
     <div>
       <Header />
-
       <main>
         <section id="core-concepts">
           <h2>Core Concepts</h2>
@@ -25,7 +27,6 @@ function App() {
           </ul>
         </section>
         <h2>Time to get started!</h2>
-
         <section id="examples">
           <h2>Examples</h2>
           <menu>
