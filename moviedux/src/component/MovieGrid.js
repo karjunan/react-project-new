@@ -39,7 +39,7 @@ export default function MovieGrid() {
         selectRating === "bad"
       ) {
         return true;
-      } else if (selectRating == "all") {
+      } else if (selectRating === "all") {
         return true;
       } else {
         return false;
