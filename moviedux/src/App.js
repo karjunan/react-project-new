@@ -8,11 +8,11 @@ import MovieGrid from "./component/MovieGrid";
 import Watchlist from "./component/WatchList";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-function App() {
+export default function App() {
   const [movies, setMovies] = useState([]);
   const [watchList, setWatchList] = useState([]);
 
-  console.log("Watch list => " + watchList);
+  // console.log("Watch list => " + watchList);
   const toggleWatchList = (movieId) => {
     setWatchList((prev) => {
       return prev.includes(movieId)
@@ -72,5 +72,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
