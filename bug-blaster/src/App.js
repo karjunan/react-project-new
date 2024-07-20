@@ -24,7 +24,7 @@ function App() {
         <h2>Bug Blaster</h2>
         <TicketForm dispatch={dispatch}></TicketForm>
         {state.tickets.length > 0 && (
-          <TicketList tickets={state.tickets}></TicketList>
+          <TicketList tickets={state.tickets} dispatch={dispatch}></TicketList>
         )}
       </div>
     </div>
